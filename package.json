@@ -1,0 +1,9 @@
+{
+  "name": "@apifactory/spectral-ruleset",
+  "version": "1.0.0",
+  "description": "Reglas centrales de Spectral para @apifactory",
+  "main": ".spectral.yaml",
+  "files": [
+    ".spectral.yaml"
+  ]
+}

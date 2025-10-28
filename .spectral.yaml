@@ -1,0 +1,51 @@
+extends: spectral:oas
+
+rules:
+  # Información
+  info-contact: warn
+  info-license: off
+  info-license-url: off
+  info-description: warn
+  
+  # Operaciones
+  operation-description: warn
+  operation-operationId: error
+  operation-operationId-unique: error
+  operation-parameters-unique: error
+  operation-2xx-response: warn
+  operation-4xx-problem-details-rfc7807: warn
+  
+  # Parámetros
+  operation-singular-tag: error
+  operation-tag-defined: error
+  
+  # Componentes
+  component-name-unique: error
+  
+  # Paths
+  no-ambiguous-paths: error
+  no-http-verbs-in-paths: error
+  no-identical-paths: error
+  no-path-trailing-slash: warn
+  paths-kebab-case: off
+  
+  # Referencias
+  no-unresolved-refs: error
+  no-unused-components: warn
+  
+  # Servidores
+  no-empty-servers: warn
+  no-server-trailing-slash: warn
+  no-server-variables-empty-enum: error
+  no-server-example.com: error
+  
+  # Esquemas
+  no-schema-type-mismatch: error
+  no-required-schema-properties-undefined: error
+  no-enum-type-mismatch: error
+  
+  # Ejemplos
+  no-invalid-media-type-examples: warn
+  no-invalid-parameter-examples: warn
+  no-invalid-schema-examples: warn
+  no-example-value-and-externalValue: error
